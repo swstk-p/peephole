@@ -1,0 +1,13 @@
+TODO0: download the image
+TODO1: Explore datasets and training
+     : Load pre-trained models for application building while training custom models side by side
+TODO2: Explore auto-filling
+
+TODO (LATER):
+    - Try different fonts for body
+    - AFTER LOGIN NAVBAR: ONLINE-STATUS, (OPTIONS i.e. customization, preferences etc) SETTINGS, LOGOUT
+    - BEFORE LOGIN NAVBAR: ONLINE-STATUS, RETAKE ANCHOR PHOTO, (EXT ie. site settings) SETTINGS
+    - Check compatibility for other browsers
+
+NOTE
+    - (OPT) SETTINGS contains toggle autofill, toggle auto sign in (if possible), retake photo, delete account, CRUD for (groups / websites)

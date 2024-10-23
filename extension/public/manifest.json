@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "peephole",
+    "version": "1.0.0",
+    "description": "A password manager based on face recognition.",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "32": "images/icon.png",
+        "48": "images/icon.png"
+    },
+    "background": {
+        "service_worker": "scripts/service-worker.js"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["scripts/content-script.js"]
+    }],
+    "permissions": ["storage", "scripting", "tabs", "activeTab", "notifications", "storage"]
+}

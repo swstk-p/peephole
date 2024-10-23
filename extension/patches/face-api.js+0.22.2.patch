@@ -1,0 +1,62 @@
+diff --git a/node_modules/face-api.js/build/commonjs/draw/drawDetections.js b/node_modules/face-api.js/build/commonjs/draw/drawDetections.js
+index 8c8b263..f68e3ec 100644
+--- a/node_modules/face-api.js/build/commonjs/draw/drawDetections.js
++++ b/node_modules/face-api.js/build/commonjs/draw/drawDetections.js
+@@ -5,17 +5,18 @@ var FaceDetection_1 = require("../classes/FaceDetection");
+ var WithFaceDetection_1 = require("../factories/WithFaceDetection");
+ var utils_1 = require("../utils");
+ var DrawBox_1 = require("./DrawBox");
++
+ function drawDetections(canvasArg, detections) {
+     var detectionsArray = Array.isArray(detections) ? detections : [detections];
+-    detectionsArray.forEach(function (det) {
+-        var score = det instanceof FaceDetection_1.FaceDetection
+-            ? det.score
+-            : (WithFaceDetection_1.isWithFaceDetection(det) ? det.detection.score : undefined);
+-        var box = det instanceof FaceDetection_1.FaceDetection
+-            ? det.box
+-            : (WithFaceDetection_1.isWithFaceDetection(det) ? det.detection.box : new classes_1.Box(det));
+-        var label = score ? "" + utils_1.round(score) : undefined;
+-        new DrawBox_1.DrawBox(box, { label: label }).draw(canvasArg);
++    detectionsArray.forEach(function(det) {
++        var score = det instanceof FaceDetection_1.FaceDetection ?
++            det.score :
++            (WithFaceDetection_1.isWithFaceDetection(det) ? det.detection.score : undefined);
++        var box = det instanceof FaceDetection_1.FaceDetection ?
++            det.box :
++            (WithFaceDetection_1.isWithFaceDetection(det) ? det.detection.box : new classes_1.Box(det));
++        var label = score ? "" + "" : undefined;
++        new DrawBox_1.DrawBox(box, { label: "" }).draw(canvasArg);
+     });
+ }
+ exports.drawDetections = drawDetections;
+diff --git a/node_modules/face-api.js/build/es6/draw/drawDetections.js b/node_modules/face-api.js/build/es6/draw/drawDetections.js
+index 2cf72f3..b8cef40 100644
+--- a/node_modules/face-api.js/build/es6/draw/drawDetections.js
++++ b/node_modules/face-api.js/build/es6/draw/drawDetections.js
+@@ -5,15 +5,15 @@ import { round } from '../utils';
+ import { DrawBox } from './DrawBox';
+ export function drawDetections(canvasArg, detections) {
+     var detectionsArray = Array.isArray(detections) ? detections : [detections];
+-    detectionsArray.forEach(function (det) {
+-        var score = det instanceof FaceDetection
+-            ? det.score
+-            : (isWithFaceDetection(det) ? det.detection.score : undefined);
+-        var box = det instanceof FaceDetection
+-            ? det.box
+-            : (isWithFaceDetection(det) ? det.detection.box : new Box(det));
+-        var label = score ? "" + round(score) : undefined;
+-        new DrawBox(box, { label: label }).draw(canvasArg);
++    detectionsArray.forEach(function(det) {
++        var score = det instanceof FaceDetection ?
++            det.score :
++            (isWithFaceDetection(det) ? det.detection.score : undefined);
++        var box = det instanceof FaceDetection ?
++            det.box :
++            (isWithFaceDetection(det) ? det.detection.box : new Box(det));
++        var label = score ? "" + "" : undefined;
++        new DrawBox(box, { label: "" }).draw(canvasArg);
+     });
+ }
+ //# sourceMappingURL=drawDetections.js.map
+\ No newline at end of file

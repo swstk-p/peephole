@@ -1,0 +1,25 @@
+@import url('../../fonts/fonts.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+    .scrollbar::-webkit-scrollbar-track {
+        background: white;
+        border-radius: 100vh;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 100vh;
+    }
+}
