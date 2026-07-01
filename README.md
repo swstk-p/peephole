@@ -120,27 +120,60 @@ flowchart TD
 
     Match -->|No| Register
 ```
+
+## Screenshots
+
+### Registration
+
+| | |
+|--|--|
+| <img src="screenshots/Registration1.png"> | <img src="screenshots/Registration2.png"> |
+
+### Dashboard
+
+| |
+|--|
+| <img src="screenshots/Dashboard.png"> |
+
+### Saving Credentials
+
+| | |
+|--|--|
+| <img src="screenshots/CredentialSave1.png"> | <img src="screenshots/CredentialSave2.png"> |
+
+### Credential Management
+
+| |
+|--|
+| <img src="screenshots/CredentialUpdate1.png"> |
+
+### Account Management
+
+| | |
+|--|--|
+| <img src="screenshots/AccManagement1.png"> | <img src="screenshots/AccManagement2.png"> |
+
 ## Technology Stack
 
-#### Chrome Extension
+### Chrome Extension
 
 - **React.js** – User interface development.
 - **Chrome Extension APIs** – Browser integration, storage management, content script injection, and background service worker functionality.
 - **Axios** – Communication with backend services.
 - **Tailwind CSS** – User interface styling.
 
-#### Backend
+### Backend
 
 - **Node.js** – JavaScript runtime environment.
 - **Express.js** – REST API implementation.
 - **MongoDB** – Persistent data storage.
 - **Mongoose** – MongoDB object modeling and database interaction.
 
-#### Biometrics
+### Biometrics
 
 - **face-api.js** – Facial descriptor generation and face matching for biometric authentication.
 
-#### Security
+### Security
 
 - **Custom RSA Implementation** – Encryption of stored credential data prior to persistence.
 
