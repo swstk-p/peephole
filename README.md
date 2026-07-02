@@ -153,6 +153,12 @@ flowchart TD
 |--|--|
 | <img src="screenshots/AccManagement1.png"> | <img src="screenshots/AccManagement2.png"> |
 
+## Demo
+
+A brief demo of the core functionalities of Peephole: registration and authentication based on face-recognition, credential management and account management.
+
+[![Watch the demo](screenshots/DemoThumbnail.png)](https://youtu.be/zEYXn6EyOQ4)
+
 ## Technology Stack
 
 ### Chrome Extension
