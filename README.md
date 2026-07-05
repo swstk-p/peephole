@@ -25,6 +25,44 @@ The project, in overview, consists of:
  - Automated credential capture
  - Account management
 
+## Demo
+
+A brief demo of the core functionalities of Peephole: registration and authentication based on face-recognition, credential management and account management.
+
+[![Watch the demo](screenshots/DemoThumbnail.png)](https://youtu.be/zEYXn6EyOQ4)
+
+## Screenshots
+
+### Registration
+
+| | |
+|--|--|
+| <img src="screenshots/Registration1.png"> | <img src="screenshots/Registration2.png"> |
+
+### Dashboard
+
+| |
+|--|
+| <img src="screenshots/Dashboard.png"> |
+
+### Saving Credentials
+
+| | |
+|--|--|
+| <img src="screenshots/CredentialSave1.png"> | <img src="screenshots/CredentialSave2.png"> |
+
+### Credential Management
+
+| |
+|--|
+| <img src="screenshots/CredentialUpdate1.png"> |
+
+### Account Management
+
+| | |
+|--|--|
+| <img src="screenshots/AccManagement1.png"> | <img src="screenshots/AccManagement2.png"> |
+
 ## System Architecture
 
 The system follows a client-server architecture. The Chrome extension is responsible for user interaction and webpage integration, while the backend centralizes authentication and credential management logic. MongoDB serves as the persistence layer for user and credential data.
@@ -120,44 +158,6 @@ flowchart TD
 
     Match -->|No| Register
 ```
-
-## Screenshots
-
-### Registration
-
-| | |
-|--|--|
-| <img src="screenshots/Registration1.png"> | <img src="screenshots/Registration2.png"> |
-
-### Dashboard
-
-| |
-|--|
-| <img src="screenshots/Dashboard.png"> |
-
-### Saving Credentials
-
-| | |
-|--|--|
-| <img src="screenshots/CredentialSave1.png"> | <img src="screenshots/CredentialSave2.png"> |
-
-### Credential Management
-
-| |
-|--|
-| <img src="screenshots/CredentialUpdate1.png"> |
-
-### Account Management
-
-| | |
-|--|--|
-| <img src="screenshots/AccManagement1.png"> | <img src="screenshots/AccManagement2.png"> |
-
-## Demo
-
-A brief demo of the core functionalities of Peephole: registration and authentication based on face-recognition, credential management and account management.
-
-[![Watch the demo](screenshots/DemoThumbnail.png)](https://youtu.be/zEYXn6EyOQ4)
 
 ## Technology Stack
 
