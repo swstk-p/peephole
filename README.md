@@ -16,15 +16,6 @@ The project, in overview, consists of:
 
  Once authenticated, users can manage their stored credentials associated with different websites and automatically populate forms for simplified login.
 
- ## Features
-
- - Face-recognition for authentication
- - Encrypted credential storage
- - Login form detection and autofill
- - URL based credential management
- - Automated credential capture
- - Account management
-
 ## Demo
 
 A brief demo of the core functionalities of Peephole: registration and authentication based on face-recognition, credential management and account management.
@@ -62,6 +53,25 @@ A brief demo of the core functionalities of Peephole: registration and authentic
 | | |
 |--|--|
 | <img src="screenshots/AccManagement1.png"> | <img src="screenshots/AccManagement2.png"> |
+
+
+ ## Features
+
+ - Face-recognition for authentication
+ - Encrypted credential storage
+ - Login form detection and autofill
+ - URL based credential management
+ - Automated credential capture
+ - Account management
+
+## Table of Contents
+- [System Architecture](#system-architecture)
+- [Authentication Workflow](#authentication-workflow)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Limitations](#limitations)
+- [Future Improvements](#future-improvements)
+- [Setup](#setup)
 
 ## System Architecture
 
